@@ -44,7 +44,6 @@ def index(response):
 
 class IndexView(View):
 	def get(self, request):
-		current_user = request.session['user']
 		user = graph.get_user()
 		name = user['displayName']
 		
