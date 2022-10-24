@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+</head>
+<body>
+    <h1>Microsoft Identity Python Web App</h1>
+    <h2>Welcome {{ name }}!</h2>
+
+    <li><a href="/microsoft_authentication/login">Login</a></li>
+    <li><a href="{% url 'our_dummy_project:Logout' %}">Logout</a></li>
+    <hr>
+    <footer style="text-align: right">Powered by MSAL Python {{ version }}</footer>
+</body>
+</html>
+

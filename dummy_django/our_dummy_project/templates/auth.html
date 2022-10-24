@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    <script src="./packages/mgt/dist/bundle/mgt-loader.js"></script>
+    <script>
+      mgt.TeamsProvider.handleAuth();
+    </script>
+    <script type="module">
+      // import { TeamsProvider } from './packages/providers/mgt-teams-provider/dist/es6/TeamsProvider.js';
+      // TeamsProvider.handleAuth();
+
+      import { TeamsMsal2Provider } from './packages/providers/mgt-teams-msal2-provider/dist/es6/TeamsMsal2Provider.js';
+      TeamsMsal2Provider.handleAuth();
+    </script>
+  </head>
+  <body>
+    Signing You In...
+  </body>
+</html>
